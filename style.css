@@ -4,6 +4,10 @@
     padding: 5%;
 }
 
+#foto23 {
+    padding: 5%;
+}
+
 .container2 {
     font-size: 16px;
     line-height: 1.5;
@@ -29,6 +33,7 @@
     line-height: 1.5;
     color: #333333;
     padding: 12px;
+    margin-left: 7%;
 }
 
 #h22 {
@@ -132,6 +137,7 @@ footer {
 
 .con-foot {
     margin: 0 auto;
+    padding-top: 3%;
 }
 
 nav {
@@ -150,7 +156,6 @@ nav {
 #home {
     display: inline-block;
     margin-left: 20px;
-    font-size: 20px;
     padding-top: 25px;
 }
 
@@ -174,13 +179,32 @@ hr {
     margin: 20px 0;
 }
 
-.nav-social {
+nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    /* Allinea tutto il contenuto orizzontalmente al centro */
+    padding: 20px;
+    /* Spazio interno opzionale */
 }
 
-.nav-social li {
-    display: inline-block;
-    gap: 10px;
+.nav-social {
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 10%;
+}
+
+.nav-item {
+    margin: 0 15px;
+    /* Spazio orizzontale tra gli elementi */
+}
+
+/* Aggiunge spazio tra il paragrafo e le icone */
+.paragraph-item {
+    flex-grow: 1;
+    /* Rende questo elemento flessibile per occupare lo spazio rimanente */
+    display: flex;
+    padding-right: 15%;
+    margin-left: 0;
+    justify-content: center;
+    /* Allinea il paragrafo al centro orizzontalmente */
 }
