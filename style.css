@@ -1,6 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+#background {
+    width: 1440px;
+    height: auto;
+}
+
+header {
+    background-color: white;
+}
+
+/********* link **************/
+header>nav ul li a:link,
+header>nav ul li a:visited {
+    color: #4A1D1F;
+}
+
+header>nav ul li a:hover,
+header>nav ul li a:active {
+    color: orange;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/*****************************/
+
+h1 {
+    color: #4A1D1F;
+    text-align: right;
+}
+
+header img {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-list {
+    display: grid;
+    grid-template-columns: 228px 48px 46px 103px 46px 72px 46px 89px 95px 251px 64px 61px 51px;
+    grid-template-rows: 75px;
+    place-content: center;
+    place-items: center;
+}
+
+.head-item-1 {
+    /*home*/
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.head-item-2 {
+    /*categories*/
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.head-item-3 {
+    /*about us*/
+    grid-row: 1;
+    grid-column: 6;
+}
+
+.head-item-4 {
+    /*contact us*/
+    grid-row: 1;
+    grid-column: 8;
+}
+
+/****************search box***************/
+.head-item-5 {
+    grid-row: 1;
+    grid-column: 10;
+}
+
+.form-box {
+    display: flex;
+    border: 2px solid #4A1D1F;
+    width: 251px;
+    height: 45px;
+    background-color: pink;
+}
+
+.search-input {
+    border: none;
+    width: 100%;
+}
+
+.form-button {
+    background-color: #4A1D1F;
+    border: none;
+}
+
+.form-box img {
+    width: 19px;
+    height: 19px;
+    margin: 13px;
+}
+
+/***************************/
+.head-item-6 {
+    /*user icon */
+    grid-row: 1;
+    grid-column: 11;
+    justify-self: flex-end;
+}
+
+.head-item-6>img {
+    width: 34px;
+    padding: 34px;
+    background-color: pink;
+}
+
+.head-item-7 {
+    /*cart icon*/
+    grid-row: 1;
+    grid-column: 12;
+    justify-self: flex-end;
+}
+
+.head-item-7 {
+    width: 29px;
+    height: 28px;
+}
+
+.top-title {
+    color: #4A1D1F;
+    width: 530px;
+    height: 132px;
+    font-size: 44px;
+}
+
+.top-p {
+    color: #4A1D1F;
+    width: 510px;
+    height: 108px;
+    font-size: 24px;
+}
+
+.top-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main-cake-bg {
+    background: radial-gradient(#FBEDCD 40%, white 70%);
+    width: 1000px;
+    height: 1019px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-size: 1000px 1019px;
+    z-index: -1;
+}
+
+.main-cake {
+    width: 600px;
+}
+
+.brown-btn {
+    width: 166px;
+    height: 50px;
+    border-radius: 4px;
+    color: #FBEDCD;
+    background-color: #4A1D1F;
+    border: none;
+    margin-right: 15px;
+}
+
+.white-btn {
+    width: 166px;
+    height: 50px;
+    border-radius: 4px;
+    color: #4A1D1F;
+    background-color: transparent;
+    ;
+    border: solid 1px;
+}
+
+.top-white-bar {
+    width: 1000px;
+    height: 201px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 105px;
+    position: absolute;
+    top: 480px;
+    left: 590px;
+}
+
+/******* arrow *********/
+.left-arrow img {
+    width: 100%;
+    height: 10px;
+    object-fit: scale-down;
+}
+
+.right-arrow img {
+    width: 100%;
+    height: 5px;
+    object-fit: scale-down;
+    margin: 5px;
+}
+
+.top-bar-flex p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/***************************/
+.bar-grid {
+    display: grid;
+    display: grid;
+    grid-template-columns: 125px 230px 230px 124px;
+    grid-template-rows: 201px;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.top-bar-flex {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    place-items: center;
+}
+
+.bar-imgs-1 {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 20px;
+}
+
+.bar-imgs-2 {
+    grid-row: 1;
+    grid-column: 3;
+    margin-top: 20px;
+}
+
+.bar-imgs-3 {
+    grid-row: 1;
+    grid-column: 4;
+    margin-top: 20px;
+}
+
+.small {
+    font-size: small;
+}
+
+.top-bar-flex p {
+    font-size: 18px;
+}
+
+/******************************/
+
+.try {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+}
+
+.try h2 {
+    font-size: 48px;
+    line-height: 128px;
+}
+
+.try-t {
+    width: 484px;
+    height: 128px;
+}
+
+.try-right {
+    width: 673px;
+    height: 99px;
+    font-size: 22px;
+    padding: 6px 0;
+    margin: 14.5px;
+}
+
+.try-line {
+    margin: 0 56px;
+}
+
+/************ best selling cakes ***************/
+.flex-star {
+    display: flex;
+    width: 231px;
+    height: 26px;
+    justify-content: space-between;
+}
+
+.cake-container {
+    text-align: center;
+    width: 231px;
+    margin-left: 72px;
+}
+
+.small-rate {
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.best-cake {
+    width: 231px;
+    height: 328px;
+    object-fit: cover;
+    border-radius: 33px;
+    border: none;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cake-wrap {
+    display: flex;
+    gap: 0 35.5px;
+    margin-top: 108px;
+    position: absolute;
+    left: 85px;
+}
+
+
+
+
+
+
 #foto1 {
     float: left;
-    height: 350px;
     padding: 5%;
 }
 
@@ -29,6 +365,7 @@
 }
 
 .container3 {
+    margin-top: 40%;
     font-size: 16px;
     line-height: 1.5;
     color: #333333;
@@ -57,6 +394,7 @@ section {
     background-color: antiquewhite;
     text-align: center;
     padding: 2%;
+    padding-bottom: 4%;
 }
 
 h4 {
