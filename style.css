@@ -32,12 +32,14 @@ button:hover {
 
 /*****************************/
 
-h1 {
+/*h1 {
     color: #4A1D1F;
     text-align: right;
+    margin-left: 20px;
 }
 
 header img {
+    display: inline-block;
     width: 34px;
     height: 34px;
     margin-right: 10px;
@@ -50,11 +52,80 @@ header img {
 }
 
 .header-list {
-    display: grid;
-    grid-template-columns: 228px 48px 46px 103px 46px 72px 46px 89px 95px 251px 64px 61px 51px;
-    grid-template-rows: 75px;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
     place-content: center;
     place-items: center;
+}
+*/
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Aggiungi del padding se necessario */
+    background-color: #f8f8f8;
+    /* Cambia il colore di sfondo se necessario */
+}
+
+/* Allinea h1 a sinistra */
+.header-wrap h1 {
+    margin-left: 5%;
+}
+
+/* Contenitore per la lista di navigazione */
+.header-div-wrap {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Lista di navigazione */
+.header-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-list li {
+    margin: 0 10px;
+    font-size: 15px;
+    /* Spazio tra gli elementi della lista */
+}
+
+/* Contenitore per le icone */
+.header-img ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    vertical-align: middle;
+}
+
+.header-img li {
+    margin-left: 15px;
+    /* Spazio tra le icone */
+}
+
+/* Stili per la form di ricerca */
+.form-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .head-item-1 {
